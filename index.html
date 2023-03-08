@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/d742a5021a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav id="sidemenu">
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Student</p>
+                    <h1>Hi, I'm<span> Naveen Kumar</span><br>Goli From India</h1>
+                </div>
+            </div>
+        </div>
+        <!--About-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png" alt="User_Image">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'am Naveen Kumar Goli, a Student pursuing B.Tech Final year under the stream of Computer Scence And Engineering in KKR & KSR Institute Of Technolody And Sciences</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br></li>
+                                <li><span>C</span><br></li>
+                                <li><span>Java</span><br></li>
+                                <li><span>Mysql</span><br></li>
+                                <li><span>Html</span><br></li>
+                                <li><span>CSS</span><br></li>
+                                <li><span>Full Stack Development</span><br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>Currently pursuing B.Tech final year in KKSR & KSR Institute Of Technology And Sciences, Guntur</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019-current</span><br>B.Tech in Computer Science And Engineering</li>
+                                <li><span>2017-2019</span><br>Intermediate in Maths, Physics And Chemistry</li>
+                                <li><span>2016-2017</span><br>Secondary School Certificate</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------Services----------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                   <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quasi tempora dicta error labore necessitatibus? Incidunt facilis obcaecati tempora. 
+                    Velit, dolorum! Architecto, veritatis et. Corporis numquam velit et, nobis quos ad.</p>
+                    <a href="#">Learn more</a>
+                   </div> 
+                </div>
+            </div>
+        </div>
+        <!-- -----------Portfolio--------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Work-1">
+                        <div class="layer">
+                            <h3>Traffic Management Using AI</h3>
+                            <p>Main purpose of project is to reduce the manpower needed to
+                                control the traffic. Our design system can reduce the chances of
+                                such scenarios by automatically computing the optimal green signal
+                                based on the current traffic at the signal. Our System will ensure
+                                that the direction with more traffic is allotted with a green signal for
+                                long duration of time as compared to the direction with less traffic.
+                                Technologies: Computer Vision, Image processing, Deep-learning </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Work-2">
+                        <div class="layer">
+                            <h3>Student Results Website</h3>
+                            <p>Designed a website using HTML5, CSS and SQL where the
+                                students of our college can check their semester result and
+                                calculate their SGPA & CGPA</p>
+                                <a href="https://www.kitsresults.ml"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!-- -----------Contact---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>gnaveenkumar1914@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>7780338855</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/i.t.s.__m.e.__n.a.v.e.e/"<i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/naveen-kumar-268825196/"<i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"<i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"<i class="fa-brands fa-twitter-square"></i></a>
+                        </div>
+                        <a href="images/My_CV.pdf" class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright © Naveen. Made with <i class="fas fa-heart"></i> by East Tutorials</p>
+            </div>
+        </div>
+        
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");        
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEOx8W5luAT9cRibc9BSmzm3WM0s9FqD0jfS1GtuivzNlB7lrZ1EuMBehFPmT6v_BQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+    </body>
+</html>
